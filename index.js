@@ -36,6 +36,10 @@ const clientSecret = "19666a4f-32dd-4049-b082-684c74115f28";
 
         const userInfo = userInfoResponse.data;
 
+        if (!userInfo) {
+            console.error("User Info:", userInfo);
+        }
+
         console.log("User Info:", userInfo);
         
         // TODO: получение списка чатов
